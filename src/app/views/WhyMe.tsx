@@ -2,14 +2,14 @@ import React from 'react'
 
 import SectionHeader from '../components/SectionHeader'
 
-const Social = () => {
+const WhyMe = () => {
   return (
-    <section id='social' className='bg-primary'>
+    <section id='why-me'>
       <div className="container">
-        <SectionHeader>Social</SectionHeader>
+        <SectionHeader>Why You Should Choose Me</SectionHeader>
       </div>
     </section>
   )
 }
 
-export default Social
+export default WhyMe
