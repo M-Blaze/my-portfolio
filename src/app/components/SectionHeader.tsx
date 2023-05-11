@@ -2,13 +2,13 @@ import React from 'react'
 
 import styles from './SectionHeader.module.css'
 
-type BLockHeaderProps = {
+type SectionHeaderProps = {
   children: React.ReactNode
 }
 
-const BlockHeader:React.FC<BLockHeaderProps> = ({ children }) => {
+const BlockHeader:React.FC<SectionHeaderProps> = ({ children }) => {
   return (
-    <div className="block-header text-center overflow-hidden">
+    <div className="section-header text-center overflow-hidden">
       <h2 className={`text-positive text-4xl inline-block relative ${styles.header}`}>{children}</h2>
     </div>
   )
