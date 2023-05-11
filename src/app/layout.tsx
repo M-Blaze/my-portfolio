@@ -1,7 +1,10 @@
 import './globals.css'
-import { Open_Sans } from 'next/font/google'
+import { Inter } from 'next/font/google'
 
-const openSans = Open_Sans({ subsets: ['latin'], display: 'swap' })
+const inter = Inter({
+  subsets: ['latin'],
+  display: 'swap',
+});
 
 export const metadata = {
   title: 'Moulik rai - Software Developer Engineer',
@@ -15,7 +18,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={openSans.className}>{children}</body>
+      <body className={inter.className}>{children}</body>
     </html>
   )
 }
