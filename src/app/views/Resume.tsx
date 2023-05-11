@@ -12,10 +12,10 @@ const Resume = () => {
           <strong>Please feel free to download a copy of my resume for your consideration.</strong>
         </div>
         <div className="link-wrap">
-          <a className='flex justify-between max-w-4xl mx-auto bg-primary p-6 rounded-lg text-xl' href="/resume-moulik_rai.pdf" target="_blank">
+          <a className='flex justify-between max-w-4xl mx-auto bg-primary hover:bg-primary-100 hover:text-positive p-6 rounded-lg text-xl' href="/resume-moulik_rai.pdf" target="_blank">
             <span>Moulik Rai-Resume (pdf)</span>
-            <div className="icon-wrap">
-              <IconDownload fontSize="30px" className='inline-block' fill='rgb(103, 161, 126)' />Download
+            <div className="icon-wrap text-positive">
+              <IconDownload fontSize="30px" className='inline-block' fill='#67a17e' />Download
             </div>
           </a>
         </div>
