@@ -6,7 +6,8 @@
     "dev": "next dev -p 8080",
     "build": "next build",
     "start": "next start -p 8080",
-    "lint": "next lint"
+    "lint": "next lint",
+    "build-icons": "npx @svgr/cli public/icons --out-dir src/app/shared/icons --icon --typescript"
   },
   "dependencies": {
     "@types/node": "20.1.2",
