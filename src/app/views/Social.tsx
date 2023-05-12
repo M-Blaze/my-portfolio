@@ -4,7 +4,7 @@ import SectionHeader from '../components/SectionHeader'
 
 const Social = () => {
   return (
-    <section id='social' className='bg-primary'>
+    <section id='social' className='py-10'>
       <div className="container">
         <SectionHeader>Social</SectionHeader>
       </div>

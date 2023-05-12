@@ -1,11 +1,11 @@
 import React from 'react'
 
 import SectionHeader from '../components/SectionHeader'
-import { IconDownload } from '../shared/icons'
+import { Download as IconDownload } from '../shared/icons'
 
 const Resume = () => {
   return (
-    <section id='resume' className='text-center'>
+    <section id='resume' className='text-center py-10'>
       <div className="container">
         <SectionHeader>Resume</SectionHeader>
         <div className="text-wrap text-xl mb-12 pt-8">
