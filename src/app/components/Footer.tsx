@@ -5,11 +5,9 @@ const Footer = () => {
     return new Date().getFullYear()
   }, [])
   return (
-    <footer>
+    <footer className='text-center py-6 bg-primary'>
       <div className="container">
-        <div className="text-wrap">
-          Copyright &copy; {currentYear} Moulik Rai - All Rights Reserved.
-        </div>
+        Copyright &copy; {currentYear} Moulik Rai - All Rights Reserved.
       </div>
     </footer>
   )
