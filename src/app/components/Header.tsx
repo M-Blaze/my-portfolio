@@ -1,17 +1,26 @@
 import React from 'react'
 
+import Image from 'next/image'
+import Link from 'next/link'
+
 const Header = () => {
   return (
-    <div className="header text-black py-2" style={{ background: "rgba(255, 255, 255, 0.9)" }}>
-      <div className="container flex justify-between items-center">
-        <div>logo</div>
-        <ul className="nav-list flex">
-          <li className="px-2">sadfa</li>
-          <li className="px-2">sadfa</li>
-          <li className="px-2">sadfa</li>
-        </ul>
+    <header>
+      <div className="container">
+        <div className="header-content flex justify-between items-center py-2">
+          <div className='logo'>
+            <Link href={'/'}>
+              <Image src="/logo.png" alt="logo" width={200} height={100} />
+            </Link>
+          </div>
+          <ul className="nav-list flex">
+            <li className="px-2">sadfa</li>
+            <li className="px-2">sadfa</li>
+            <li className="px-2">sadfa</li>
+          </ul>
+        </div>
       </div>
-    </div>
+    </header>
   )
 }
 
