@@ -1,8 +1,10 @@
 import React from 'react'
-
 import Image from 'next/image'
 import Link from 'next/link'
 
+import BurgerMenu from './BurgerMenu'
+
+BurgerMenu
 
 const Header = () => {
   return (
@@ -11,22 +13,23 @@ const Header = () => {
         <div className="header-content flex justify-between items-center py-2">
           <div className='logo'>
             <Link href="/">
-              <Image src="/logo.png" alt="logo" width={200} height={100} />
+              <Image src="/logo.png" alt="logo" width={200} height={100} className='w-36' />
             </Link>
           </div>
-          <nav className='navbar'>
-            <ul className="nav-list flex -mx-2">
-              <li className="px-2">
-                <a href='#social'>Social</a>
+          <nav className='navbar absolute top-full left-0 right-0 tablet:static bg-primary'>
+            <ul className="nav-list tablet:flex tablet:-mx-3">
+              <li className="px-3">
+                <a href='#why-me' className='block tablet:inline-block hover:text-positive'>Why me</a>
               </li>
-              <li className="px-2">
-                <a href='#why-me'>Why me</a>
+              <li className="px-3">
+                <a href='#resume' className='block tablet:inline-block hover:text-positive'>Resume</a>
               </li>
-              <li className="px-2">
-                <a href='#resume'>Resume</a>
+              <li className="px-3">
+                <a href='#social' className='block tablet:inline-block hover:text-positive'>Contact</a>
               </li>
             </ul>
           </nav>
+          <BurgerMenu />
         </div>
       </div>
     </header>
