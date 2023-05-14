@@ -1,0 +1,16 @@
+.menu-item {
+  left: 0;
+  right: 0;  
+}
+
+.menu-item:first-child {
+  top: 0;
+}
+.menu-item:nth-child(2) {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.menu-item:last-child {
+  bottom: 0;
+}
