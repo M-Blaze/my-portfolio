@@ -11,7 +11,7 @@ const Banner = () => {
           <div className="rounded-full w-96 h-96 flex flex-wrap justify-center items-center" style={{ background: 'rgba(145, 213, 172, 0.9)' }}>
             <div className="text-wrap text-center">
               <h1 className='w-full text-5xl mb-4'>Software <br /> Engineer</h1>
-              <strong className='text-xl'>Developer with a purpose</strong>
+              <strong className='text-xl'>Develop with purpose</strong>
             </div>
           </div>
         </div>
