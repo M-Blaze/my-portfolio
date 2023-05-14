@@ -6,13 +6,13 @@ module.exports = {
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
-    screens: {
-      'lg-phone': '520px',
-      'tablet': '640px',
-      'laptop': '1024px',
-      'desktop': '1280px'
-    },
     extend: {
+      screens: {
+        'lg-phone': '520px',
+        'tablet': '640px',
+        'laptop': '1024px',
+        'desktop': '1280px'
+      },
       colors: {
         primary: '#f6f6f6',
         'primary-100': '#f2f2f2',
