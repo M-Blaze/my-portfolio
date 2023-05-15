@@ -14,7 +14,7 @@ const WhyMe = () => {
   }, [])
 
   return (
-    <section id='why-me' className='bg-primary py-10'>
+    <section id='why-me' className='bg-primary py-6 tablet:py-10'>
       <div className="container">
         <SectionHeader>Why You Should Choose Me</SectionHeader>
         <div className="content-wrapper -mx-6 pt-6 tablet:pt-8 text-justify">
@@ -32,7 +32,7 @@ const WhyMe = () => {
           <div className="flex flex-wrap mb-6 tablet:mb-12">
             <div className="w-full mb-6 tablet:mb-0 tablet:w-1/2 px-6 md:order-2">
               <div className="img-holder relative h-60 tablet:h-72 laptop:h-96">
-                <Image src="/img04.jpeg" alt='image of laptop' className='object-cover' fill />
+                <Image src="/img04.jpg" alt='image of laptop' className='object-cover' fill />
               </div>
             </div>
             <div className="w-full mb-4 tablet:w-1/2 px-6 text-md table:text-xl md:order-1">

@@ -5,7 +5,7 @@ import { Download as IconDownload } from '../shared/icons'
 
 const Resume = () => {
   return (
-    <section id='resume' className='text-center py-10'>
+    <section id='resume' className='text-center py-6 tablet:py-10'>
       <div className="container">
         <SectionHeader>Resume</SectionHeader>
         <div className="text-wrap text-md tablet:text:xl mb-8 tablet:mb-12 pt-6 tablet:pt-8">

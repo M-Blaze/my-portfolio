@@ -5,7 +5,7 @@ import { Gmail, Github, Linkedin, Youtube } from '../shared/icons'
 
 const Social = () => {
   return (
-    <section id='social' className='py-10 bg-primary'>
+    <section id='social' className='py-6 tablet:py-10 bg-primary'>
       <div className="container">
         <SectionHeader>Connect With Me</SectionHeader>
         <div className="list-holder pt-8">
