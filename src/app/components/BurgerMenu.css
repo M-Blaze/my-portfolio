@@ -1,16 +1,33 @@
 .menu-item {
   left: 0;
-  right: 0;  
+  right: 0;
+  transition: all .2s linear;
 }
 
 .menu-item:first-child {
   top: 0;
 }
 .menu-item:nth-child(2) {
-  top: 50%;
-  transform: translateY(-50%);
+  top: 9px;
 }
 
 .menu-item:last-child {
-  bottom: 0;
+  top: 18px;
+}
+
+.nav-active .menu-item:nth-child(2) {
+  opacity: 0;
+}
+
+.nav-active .menu-item:first-child,
+.nav-active .menu-item:last-child {
+  top: 9px;
+}
+
+.nav-active .menu-item:first-child {
+  transform: rotate(45deg);
+}
+
+.nav-active .menu-item:last-child {
+  transform: rotate(-45deg);
 }

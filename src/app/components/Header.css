@@ -1,0 +1,4 @@
+.nav-active .navbar {
+  opacity: 1;
+  transform: translateY(0);
+}
