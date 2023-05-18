@@ -10,14 +10,21 @@ const Header = () => {
   return (
     <header className='header fixed top-0 left-0 right-0 z-10' style={{ background: 'rgba(255, 255, 255, 0.9)' }}>
       <div className="container">
-        <div className="header-content flex justify-between items-center py-2">
+        <div className="header-content flex justify-between items-center py-4">
           <div className='logo'>
             <Link href="/">
-              <Image src="/logo.png" alt="logo" width={200} height={100} className='w-36' />
+              <div className="flex items-center">
+                <div className="img-wrap">
+                  <Image src="/logo.svg" alt="logo" width={50} height={50} className='w-18' />
+                </div>
+                <div className="text-wrap ml-2">
+                  <span className='text-3xl'>Moulik Rai</span>
+                </div>
+              </div>
             </Link>
           </div>
-          <nav className='navbar absolute top-full left-0 right-0 tablet:static bg-primary opacity-0 -z-10 -translate-y-full transition-all duration-150'>
-            <ul className="nav-list tablet:flex tablet:-mx-3">
+          <nav className='navbar absolute tablet:static top-full left-0 right-0 bg-primary tablet:bg-transparent opacity-0 tablet:opacity-100 -z-10 tablet:z-0 -translate-y-full  tablet:translate-y-0 transition-all duration-150'>
+            <ul className="nav-list tablet:flex tablet:-mx-3 text-xl">
               <li className="px-3">
                 <a href='#why-me' className='block tablet:inline-block hover:text-positive'>Why me</a>
               </li>
