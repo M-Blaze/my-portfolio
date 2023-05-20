@@ -13,14 +13,7 @@ const Header = () => {
         <div className="header-content flex justify-between items-center py-4">
           <div className='logo'>
             <Link href="/">
-              <div className="flex items-center">
-                <div className="img-wrap">
-                  <Image src="/logo.svg" alt="logo" width={50} height={50} className='w-18' />
-                </div>
-                <div className="text-wrap ml-2">
-                  <span className='text-3xl'>Moulik Rai</span>
-                </div>
-              </div>
+              <Image src="/logo.svg" alt="logo" width={150} height={50} className='w-18' />
             </Link>
           </div>
           <nav className='navbar absolute tablet:static top-full left-0 right-0 bg-primary tablet:bg-transparent opacity-0 tablet:opacity-100 -z-10 tablet:z-0 -translate-y-full  tablet:translate-y-0 transition-all duration-150'>
