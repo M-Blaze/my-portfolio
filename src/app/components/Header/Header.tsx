@@ -2,8 +2,8 @@ import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 
-import BurgerMenu from './BurgerMenu'
-import NavItem from './NavItem'
+import BurgerMenu from '../BurgerMenu'
+import NavItem from '../NavItem'
 import './Header.css'
 
 
