@@ -11,7 +11,7 @@ const inter = Inter({
 
 export const metadata = {
   title: 'Moulik rai - Software Developer Engineer',
-  description: 'Portfolio of a software develoepr',
+  description: 'Portfolio of a software developer',
 }
 
 export default function RootLayout({
@@ -24,7 +24,7 @@ export default function RootLayout({
       <body className={inter.className}>
         <main className="min-h-screen">
           <Header />
-            {children}
+          {children}
           <Footer />
         </main>
       </body>
