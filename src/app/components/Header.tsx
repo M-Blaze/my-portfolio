@@ -3,8 +3,20 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 import BurgerMenu from './BurgerMenu'
-
+import NavItem from './NavItem'
 import './Header.css'
+
+
+const NAV_LINKS = [
+  {
+    label: 'home',
+    path: '/'
+  },
+  {
+    label: 'blogs',
+    path: '/blogs'
+  },
+]
 
 const Header = () => {
   return (
@@ -19,15 +31,14 @@ const Header = () => {
             </div>
             <nav className='navbar absolute tablet:static top-full left-0 right-0 bg-primary opacity-0 tablet:opacity-100 tablet:bg-transparent -z-10 tablet:z-0 -translate-y-full  tablet:translate-y-0 transition-all duration-150'>
               <ul className="nav-list tablet:flex tablet:-mx-3 text-xl">
-                <li className="px-3">
-                  <a href='#why-me' className='block tablet:inline-block hover:text-positive'>Why me</a>
-                </li>
-                <li className="px-3">
-                  <a href='#resume' className='block tablet:inline-block hover:text-positive'>Resume</a>
-                </li>
-                <li className="px-3">
-                  <a href='#social' className='block tablet:inline-block hover:text-positive'>Contact</a>
-                </li>
+                
+                {
+                  NAV_LINKS.map(link => {
+                    return (
+                      <NavItem key={link.path} label={link.label} path={link.path} />
+                    )
+                  })
+                }
               </ul>
             </nav>
             <BurgerMenu />
