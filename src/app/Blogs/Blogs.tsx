@@ -8,9 +8,9 @@ const Blogs = () => {
     <>
       <div className="header-block pt-20 bg-yellow-400">
         <div className="container">
-          <div className="content-wrap py-20">
-            <h1 className='text-8xl mb-4'>Stay curious.</h1>
-            <p className='text-2xl mb-8'>Discover stories, thinking, and expertise <br /> from writers on any topic.</p>
+          <div className="banner py-28">
+            <h1 className='text-6xl mb-4'>Unleash Your Curiosity</h1>
+            <p className='text-2xl mb-8'>Explore Insights, Ideas, and Expertise <br /> on your Programming Journey!</p>
             <SubscribeModal />
           </div>
         </div>
