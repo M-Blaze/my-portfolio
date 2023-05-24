@@ -13,8 +13,8 @@ interface NavItemProps {
 const NavItem:React.FC<NavItemProps> = ({ label, path }) => {
   const pathname = usePathname()
   const classes = classNames(
-    'block tablet:inline-block hover:text-positive capitalize',
-    pathname === path && 'text-positive'
+    'block tablet:inline-block hover:text-yellow-400 capitalize',
+    pathname === path && 'text-yellow-400'
   )
 
   return (
