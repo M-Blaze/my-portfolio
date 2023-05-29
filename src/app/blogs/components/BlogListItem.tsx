@@ -29,6 +29,9 @@ const BlogListItem:React.FC<BlogListItemProps> = ({ blog, className }) => {
 
   return (
     <li className={classes}>
+      <div className="img-holder mx-auto tablet:mx-0 mb-8 tablet:mb-0 tablet:ml-4 w-52 tablet:w-40 h-52 tablet:h-40 relative tablet:order-2">
+        <Image className='object-cover' src={blog.coverImage} alt={blog.title} fill />
+      </div>
       <div className="text-content flex-grow">
         <div className="block-header mb-4">
           <Link href={`/blogs/${blog.id}`} className='flex-grow'>
@@ -40,11 +43,13 @@ const BlogListItem:React.FC<BlogListItemProps> = ({ blog, className }) => {
           <ul className="blog-info flex flex-wrap items-center -mx-2 text-sm">
             <li className='px-2'>{blog.createdAt}</li>
             <li className='px-2'>{blog.timeToRead}</li>
-            <li className='flex-grow px-2'>
+            <li className='flex-grow px-2 flex flex-wrap -mx-2'>
               {
                 blog.tags.map(tag => {
                   return (
-                    <Tag key={tag} tag={tag} />
+                    <div className="category px-1" key={tag} >
+                      <Tag tag={tag} />
+                    </div>
                   )
                 })
               }
@@ -54,9 +59,6 @@ const BlogListItem:React.FC<BlogListItemProps> = ({ blog, className }) => {
             </li>
           </ul>
         </div>
-      </div>
-      <div className="img-holder ml-4 w-40 h-40 relative">
-        <Image className='object-cover' src={blog.coverImage} alt={blog.title} fill />
       </div>
     </li>
   )
