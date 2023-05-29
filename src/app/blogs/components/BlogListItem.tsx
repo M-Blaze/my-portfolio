@@ -1,9 +1,10 @@
 import React from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
-import { LinkIcon } from '@chakra-ui/icons'
-import { Button } from '@chakra-ui/react'
 import classNames from 'classnames'
+
+import Tag from '@/app/components/Tag'
+import BookmarkButton from './BookmarkButton'
 
 interface Blog {
   id: string,
@@ -43,15 +44,13 @@ const BlogListItem:React.FC<BlogListItemProps> = ({ blog, className }) => {
               {
                 blog.tags.map(tag => {
                   return (
-                    <Link className='mx-1' href={`/tag/${tag}`} key={tag}>
-                      <Button size='sm' className='capitalize rounded-full px-4 bg-gray-100 font-normal'>{tag}</Button>
-                    </Link>
+                    <Tag key={tag} tag={tag} />
                   )
                 })
               }
             </li>
             <li>
-              <LinkIcon />
+              <BookmarkButton />
             </li>
           </ul>
         </div>
