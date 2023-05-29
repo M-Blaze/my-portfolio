@@ -11,7 +11,7 @@ interface TagProps {
 
 const Tag:React.FC<TagProps> = ({ tag }) => {
   return (
-    <Link className='mx-1' href={`/tag/${tag}`} key={tag}>
+    <Link href={`/tag/${tag}`} key={tag}>
       <Button size='sm' className='capitalize rounded-full px-4 bg-gray-100 font-normal'>{tag}</Button>
     </Link>
   )
