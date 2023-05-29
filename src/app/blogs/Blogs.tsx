@@ -2,6 +2,7 @@ import React from 'react'
 
 import SubscribeModal from '../components/SubscribeModal'
 import BlogListItem from './components/BlogListItem'
+import Categories from './components/Categories'
 
 const BLogItems = [{
   "id": "01H15QG3R614ZHECCKF4S0658V",
@@ -129,14 +130,21 @@ const Blogs = () => {
       </div>
       <div className="blog-content">
         <div className="container">
-          <div className="list-holder">
-            <ul className="blog-lists">
-              {
-                BLogItems.map(blog => {
-                  return <BlogListItem className='mb-8' blog={blog} key={blog.id} />
-                })
-              }
-            </ul>
+          <div className="flex flex-wrap tablet:-mx-12">
+            <div className="tablet:w-1/3 tablet:px-6 tablet:order-2">
+              <Categories />
+            </div>
+            <div className="tablet:w-2/3 tablet:px-6">
+              <div className="list-holder">
+                <ul className="blog-lists">
+                  {
+                    BLogItems.map(blog => {
+                      return <BlogListItem className='mb-8' blog={blog} key={blog.id} />
+                    })
+                  }
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
       </div>
