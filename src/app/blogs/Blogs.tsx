@@ -121,20 +121,20 @@ const Blogs = () => {
     <>
       <div className="header-block pt-20 bg-yellow-400 mb-8">
         <div className="container">
-          <div className="banner py-28">
-            <h1 className='text-6xl mb-4'>Unleash Your Curiosity</h1>
-            <p className='text-2xl mb-8'>Explore Insights, Ideas, and Expertise <br /> on your Programming Journey!</p>
+          <div className="banner py-20 desktop:py-28 text-center tablet:text-left">
+            <h1 className='text-4xl py-text-6xl mb-4'>Unleash Your Curiosity</h1>
+            <p className='text-lg py-text-2xl mb-8'>Explore Insights, Ideas, and Expertise <br /> on your Programming Journey!</p>
             <SubscribeModal />
           </div>
         </div>
       </div>
       <div className="blog-content">
         <div className="container">
-          <div className="flex flex-wrap tablet:-mx-12">
-            <div className="tablet:w-1/3 tablet:px-6 tablet:order-2">
+          <div className="flex flex-wrap tablet:flex-nowrap tablet:-mx-4">
+            <div className="tablet:w-1/3 tablet:px-4 tablet:order-2">
               <Categories />
             </div>
-            <div className="tablet:w-2/3 tablet:px-6">
+            <div className="tablet:w-2/3 tablet:px-4">
               <div className="list-holder">
                 <ul className="blog-lists">
                   {
