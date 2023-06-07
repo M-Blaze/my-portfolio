@@ -32,7 +32,7 @@ const SubscribeModal = () => {
 
   return (
     <>
-      <Button size='md' variant='outline' className='border-2 uppercase border-primary rounded-full px-8 text-primary hover:text-yellow-400 transition-colors duration-200' onClick={onOpen}>Get notified</Button>
+      <Button variant='outline' className='border-2 uppercase border-primary rounded-full px-8 text-primary hover:text-yellow-400 transition-colors duration-200' onClick={onOpen}>Get notified</Button>
       <Modal isOpen={isOpen} onClose={onClose} isCentered motionPreset='slideInBottom'>
         <ModalOverlay />
         <ModalContent className='py-4'>
