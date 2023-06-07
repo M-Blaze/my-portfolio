@@ -17,10 +17,10 @@ const CATEGORIES = [
 const Categories = () => {
   return (
     <>
-      <div className="block-header mb-4">
+      <div className="block-header mb-4 text-center tablet:text-left">
         <h3 className='text-xl'>Discover more</h3>
       </div>
-      <div className="categories flex flex-wrap -mx-4">
+      <div className="categories flex flex-wrap -mx-4 mb-8 tablet:mb-0 justify-center tablet:justify-start">
         {
           CATEGORIES.map(category => {
             return (
