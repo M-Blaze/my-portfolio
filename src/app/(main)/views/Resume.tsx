@@ -1,7 +1,7 @@
 import React from 'react'
 
-import SectionHeader from '../components/SectionHeader'
-import { Download as IconDownload } from '../shared/icons'
+import SectionHeader from '../../components/SectionHeader'
+import { Download as IconDownload } from '../../shared/icons'
 
 const Resume = () => {
   return (

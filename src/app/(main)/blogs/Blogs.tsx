@@ -1,6 +1,6 @@
 import React from 'react'
 
-import SubscribeModal from '../components/SubscribeModal'
+import SubscribeModal from '../../components/SubscribeModal'
 import BlogListItem from './components/BlogListItem'
 import Categories from './components/Categories'
 

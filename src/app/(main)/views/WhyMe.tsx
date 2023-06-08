@@ -1,7 +1,7 @@
 import React, { useMemo } from 'react'
 import Image from 'next/image'
 
-import SectionHeader from '../components/SectionHeader'
+import SectionHeader from '../../components/SectionHeader'
 
 const WhyMe = () => {
   const experienceDuration = useMemo(() => {

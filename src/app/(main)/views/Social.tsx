@@ -1,7 +1,7 @@
 import React from 'react'
 
-import SectionHeader from '../components/SectionHeader'
-import { Gmail, Github, Linkedin, Youtube } from '../shared/icons'
+import SectionHeader from '../../components/SectionHeader'
+import { Gmail, Github, Linkedin, Youtube } from '../../shared/icons'
 
 const Social = () => {
   return (
