@@ -28,7 +28,7 @@ const BLogItems = [{
 }, {
   "id": "01H15QG4KQTEMNH3SFCRN5GCD5",
   "title": "Rank",
-  "description": "Other contact with other marine mammals, initial encounter",
+  "description": "cvz contact with other marine mammals, initial encounter",
   "createdAt": "2023-01-09",
   "timeToRead": "6:57 AM",
   "tags": [
